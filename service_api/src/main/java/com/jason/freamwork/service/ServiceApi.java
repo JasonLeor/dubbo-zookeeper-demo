@@ -7,6 +7,5 @@ import java.util.List;
  */
 public interface ServiceApi {
     public String sayHello(String word);
-
     public List getUsers();
 }
