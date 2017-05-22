@@ -8,5 +8,6 @@
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <dubbo:application name="jason_consumer"/>
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
-    <dubbo:reference interface="com.jason.freamwork.service.ServiceApi" id="HelloService"/>
+    <!--注入服务-->
+    <dubbo:reference async="true" cache="true" interface="com.jason.freamwork.service.ServiceApi" id="HelloService" />
 </beans>
